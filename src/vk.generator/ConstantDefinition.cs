@@ -51,5 +51,10 @@ namespace Vk.Generator
             UInt64,
             Float32,
         }
+
+        public override string ToString()
+        {
+            return $"{this.Type} {this.Name} = {this.Value}; // {this.Comment}";
+        }
     }
 }
